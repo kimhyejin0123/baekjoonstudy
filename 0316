@@ -1,0 +1,14 @@
+#include <stdio.h>
+ 
+int main()
+{
+    int A, B;
+    
+    scanf("%d %d", &A, &B);
+    
+    printf("%.9lf",(double)A/(double)B);
+    
+    return 0;
+}
+
+/*  double로 자료형을 잘 변환해줬어야 했다... 간단한 사칙연산 코딩문제였는데 컴파일 에러를 자꾸 냈다 반성  */
