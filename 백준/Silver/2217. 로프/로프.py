@@ -1,11 +1,13 @@
-n = int(input())
-k = []
-for _ in range(n):
-    k.append(int(input()))
-k.sort()
+N = int(input())
+ropes = []
 
-answers = []
-for x in k:
-    answers.append(x*n)
-    n -= 1
-print(max(answers))
+for i in range(N):
+    ropes.append(int(input()))
+
+ropes.sort()
+
+result = []
+for j in ropes:
+    result.append(j*N)
+    N -= 1 
+print(max(result))
